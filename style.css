@@ -1,0 +1,56 @@
+.list-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.link,
+.sub-link,
+.sub-sub-link {
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d44a1e;
+    padding: 20px 40px;
+    border: 1px solid #770f10;;
+}
+
+.sub-link:hover,
+.sub-sub-link:hover {
+    background-color: #770f10;
+}
+
+.relative {
+    position: relative;
+}
+
+.sub-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: max-content;
+}
+
+.sub-sub-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    width: max-content;
+}
+
+.list-item {
+    position: relative;
+}
+
+.list-item:hover .sub-list,
+.sub-item:hover .sub-sub-list {
+    display: block;
+}
+
+.list-item:hover .link,
+.sub-item:hover .sub-link {
+    background-color: #770f10;
+}
